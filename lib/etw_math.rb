@@ -188,6 +188,20 @@ class EtwMath
     end
   end
 
+  # Calculates actual size level (float)
+  # @param size [Integer] Maximum size
+  # @return [String, Boolean] String representation of an integer or false if input is invalid or division by zero occurs
+  # @example
+  #   EtwMath.actual_level_at_size(509999) # 100.496
+  def self.actual_level_at_size(size)
+    return false if !input_valid?(size)
+    begin
+      format_number(((-50 + Math.sqrt(2500 + 200 * size)) / 100).round(3), true)
+    rescue # division by zero
+      return false
+    end
+  end
+
   # Calculates optimal size level threshold
   # @param multi [Integer] Multiplier level
   # @param ratio [Numeric] Ratio
