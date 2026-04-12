@@ -106,6 +106,16 @@ class EtwMathTests < Minitest::Test
     assert(!EtwMath.level_at_size(-1))
   end
 
+  def test_actual_level_at_size
+    assert_equal("100.496", EtwMath.actual_level_at_size(509999))
+    assert(!EtwMath.actual_level_at_size(-1))
+  end
+
+  def test_nearest_level_at_size
+    assert_equal("101", EtwMath.nearest_level_at_size(510999))
+    assert(!EtwMath.nearest_level_at_size(-1))
+  end
+
   def test_optimal_size_level_threshold
     assert_equal("550", EtwMath.optimal_size_level_threshold(100, 5.5))
     assert(!EtwMath.optimal_size_level_threshold(-1, -1))
