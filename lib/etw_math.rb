@@ -202,6 +202,20 @@ class EtwMath
     end
   end
 
+  # Calculates nearest size level (rounded)
+  # @param size [Integer] Maximum size
+  # @return [String, Boolean] String representation of an integer or false if input is invalid or division by zero occurs
+  # @example
+  #   EtwMath.nearest_level_at_size(505000) # 100
+  def self.nearest_level_at_size(size)
+    return false if !input_valid?(size)
+    begin
+      format_number(((-50 + Math.sqrt(2500 + 200 * size)) / 100).round)
+    rescue # division by zero
+      return false
+    end
+  end
+
   # Calculates optimal size level threshold
   # @param multi [Integer] Multiplier level
   # @param ratio [Numeric] Ratio
