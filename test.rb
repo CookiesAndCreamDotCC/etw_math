@@ -1,5 +1,5 @@
 # test.rb - EtwMath unit tests
-# Copyright (C) 2025 Lazy Villain
+# Copyright (C) 2025-2026 Lazy Villain
 # https://github.com/LazyAntihero/etw_math
 #
 # Redistribution and use in source and binary forms, with or without
