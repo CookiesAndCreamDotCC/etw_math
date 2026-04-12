@@ -49,6 +49,10 @@ puts "\nMax size at size level 100 size is:"
 puts EtwMath.size_at_level(100)
 puts "\nSize level for a max size of 505,000 is:"
 puts EtwMath.level_at_size(505000)
+puts "\nActual size level for a max size of 509,999 is:"
+puts EtwMath.actual_level_at_size(509999)
+puts "\nNearest size level for a max size of 510,999 is:"
+puts EtwMath.nearest_level_at_size(510999)
 puts "\nOptimal size level for a multi of 100 using a factor of 5.5 is:"
 puts EtwMath.optimal_size_level_threshold(100, 5.5)
 puts "\nOptimal multi for a size level of 550 using a ratio of 5.5 is:"
