@@ -174,8 +174,8 @@ class EtwMath
     format_number(50 * level ** 2 + 50 * level)
   end
 
-  # Calculates size level
-  # @param level [Integer] Maximum size
+  # Calculates size level (floor)
+  # @param size [Integer] Maximum size
   # @return [String, Boolean] String representation of an integer or false if input is invalid or division by zero occurs
   # @example
   #   EtwMath.level_at_size(505000) # 100
