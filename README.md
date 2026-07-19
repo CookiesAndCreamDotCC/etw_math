@@ -1,4 +1,4 @@
-# etw_math
+# etw_math 🧮
 [![Gem Version](https://badge.fury.io/rb/etw_math.svg?icon=si%3Arubygems&icon_color=%23e32400)](https://badge.fury.io/rb/etw_math)
 [![Discord](https://img.shields.io/discord/1347049108665532519?style=flat&label=Discord)](https://discord.cookiesandcream.cc/)
 
