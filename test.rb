@@ -116,6 +116,16 @@ class EtwMathTests < Minitest::Test
     assert(!EtwMath.nearest_level_at_size(-1))
   end
 
+  def test_eat_speed_value
+    assert_equal("5.4", EtwMath.eat_speed_value(23))
+    assert(!EtwMath.eat_speed_value(-1))
+  end
+
+  def test_eat_speed_level
+    assert_equal("23", EtwMath.eat_speed_level(5.4))
+    assert(!EtwMath.eat_speed_level(-1))
+  end
+
   def test_optimal_size_level_threshold
     assert_equal("550", EtwMath.optimal_size_level_threshold(100, 5.5))
     assert(!EtwMath.optimal_size_level_threshold(-1, -1))
