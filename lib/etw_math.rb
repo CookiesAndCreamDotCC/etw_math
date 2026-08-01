@@ -226,6 +226,16 @@ class EtwMath
     format_number(0.2 * eat_speed_level + 0.8, true)
   end
 
+  # Calculates eat speed level
+  # @param eat_speed_value [Float] Eat speed value
+  # @return [String, Boolean] String representation of an integer or false if input is invalid
+  # @example
+  #   EtwMath.eat_speed_level(7.0) # 31
+  def self.eat_speed_level(eat_speed_value)
+    return false if !input_valid?(eat_speed_value)
+    format_number(5 * eat_speed_value - 4)
+  end
+
   # Calculates optimal size level threshold
   # @param multi [Integer] Multiplier level
   # @param ratio [Numeric] Ratio
