@@ -53,6 +53,10 @@ puts "\nActual size level for a max size of 509,999 is:"
 puts EtwMath.actual_level_at_size(509999)
 puts "\nNearest size level for a max size of 510,999 is:"
 puts EtwMath.nearest_level_at_size(510999)
+puts "\nEat speed level for an eat speed value of 5.4:"
+puts EtwMath.eat_speed_level(5.4)
+puts "\nEat speed value for an eat speed level of 23:"
+puts EtwMath.eat_speed_value(23)
 puts "\nOptimal size level for a multi of 100 using a factor of 5.5 is:"
 puts EtwMath.optimal_size_level_threshold(100, 5.5)
 puts "\nOptimal multi for a size level of 550 using a ratio of 5.5 is:"
